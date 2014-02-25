@@ -34,10 +34,10 @@ class JetpackChangeContactSubject {
         update_post_meta( $post_id, '_feedback_subject', addslashes( $feedback_subject ) );
 
         update_post_meta( $post_id, '_feedback_email', array(
-            'to'      => $$feedback_email_array['to'],
+            'to'      => $feedback_email_array['to'],
             'subject' => $feedback_subject,
-            'message' => $$feedback_email_array['message'],
-            'headers' => $$feedback_email_array['headers']
+            'message' => $feedback_email_array['message'],
+            'headers' => $feedback_email_array['headers']
         ) );
 
         return;
